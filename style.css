@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Alata', sans-serif;
+}
+
+
+/* ----------------------------- FIRST PAGE ---------------------------------- */
+
+.mainDiv{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+.logo{
+    position: absolute;
+    /* color: #FA7070; */
+    color: white;
+    left: 60px;
+    top: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.shading{
+    color: #FA7070;
+    font-style: italic;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    left: 0px;
+    bottom: -6px;
+    height: 3px;
+    background-color: #FA7070;
+    transition: 0.5s ease-out;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: #FA7070;
+}
+
+.mainDiv .firstPage{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.7)), url(man.jpg);
+    color: white;
+}
+
+.mainDiv .firstPage .self{
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+
+.mainDiv .firstPage .self h1:after{
+    content: '';
+    animation: changeText 6s infinite linear;
+    color: #FA7070;
+}
+
+@keyframes changeText{
+    0%{content: "Developer";}
+    25%{content: "Maker";}
+    50%{content: "Builder";}
+    75%{content: "Developer";}
+    100%{content: "Builder";}
+}
+
+.mainDiv .firstPage .self .subscribe{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    background: #FA7070;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.mainDiv .firstPage .self .subscribe:hover{
+    background: #DD5353
+}
+
+#checkbtn{
+    color: white;
+    float: right;
+    line-height: 10vh;
+    margin-right: 30px;
+    font-size: 20px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* ------------------------------ HELP PAGE --------------------------------------- */
+
+.help{
+    width: 100%;
+    height: 30vh;
+    background-color: #212121;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.help .subHelp{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+.help .subHelp h5{
+   position: absolute;
+   left: 460px;
+}
+
+.help .button{
+    width: 100px;
+    padding-top: 3px;
+    padding-left: 15px;
+    height: 30px;
+    background-color: #FA7070;
+    color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    top: 120px;
+    left: 560px;
+}
+
+.help .button:hover{
+    background-color: transparent;
+    border: 2px solid #FA7070;
+    color: #FA7070;
+    transition: 0.3s;
+}
+
+
+/* ------------------------------ SECOND PAGE -------------------------------------- */
+
+#secondPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    position: relative;
+}
+
+#secondPage .profilePic{
+    /* background-color: #fff; */
+    width: 40%;
+    /* padding-top: 100px; */
+    /* position: relative; */
+}
+
+#secondPage .profilePic img{
+    z-index: 1;
+    width: 70%;
+    margin-top: 130px;
+    margin-left: 70px;
+}
+
+#secondPage .profilePic .profilePic1{
+    width: 400px;
+    height: 160px;
+    border-radius: 80px 80px 30px 30px;
+    position: absolute;
+    top: 300px;
+    z-index: -1;
+    left: 80px;
+    background-color: #FA7070;
+}
+
+#secondPage .aboutMe{
+    /* background-color: aquamarine; */
+    width: 55%;
+    padding: 120px 0 0 30px;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+#secondPage .aboutMe .aboutMe1 button{
+    width: 100px;
+    height: 35px;
+    background: #FA7070;
+    color: #fff;
+    border-style: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#secondPage .aboutMe .aboutMe1 button:hover{
+    background-color: #DD5353;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#secondPage .aboutMe .aboutMe1 p{
+   font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ THIRD PAGE -------------------------------------- */
+
+.thirdPage{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+
+.thirdPage h1{
+    color: #fff;
+    position: absolute;
+    left: 550px;
+    top: 20px;
+    font-size: 35px;
+}
+
+.thirdPage .self2{
+    position: relative;
+    top: 90px;
+    margin-left: 30px;
+    color: white;
+    display: inline-block;
+    width: 30%;
+    height: 70vh;
+    background-color: #202020;
+    border-radius: 25px;
+}
+
+/* .secondPage .self2 .subSelf{
+    position: absolute;
+} */
+.thirdPage .self2 .subSelf{
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    font-size: 25px;
+}
+
+.thirdPage .self2 .subSelf i{
+    position: absolute;
+    left: 25px;
+    color: #FA7070;
+}
+
+.thirdPage .self2 .subSelf i:hover{
+    color: #DD5353;
+    transition: 0.5s;
+}
+
+.thirdPage .self2 .subSelf p{
+    position: absolute;
+    top: 60px;
+    left: -125px;
+    width: 740%;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+.thirdPage .self2 .subSelf button{
+    position: absolute;
+    top: 450px;
+    width: 100px;
+    height: 25px;
+    left: -15px;
+    color: #fff;
+    border-radius: 25px;
+    background: #FA7070;
+    border: 1px solid #DD5353;
+}
+
+.thirdPage .self2 .subSelf button:hover{
+    background-color: #DD5353;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#hash{
+    width: 12%;
+}
+
+#hash1{
+    width: 12%;
+}
+
+#hash2{
+    width: 12%;
+}
+
+
+/* ---------------------------- LISTS -------------------------------------  */
+
+.lists{
+    width: 100%;
+    height: 40vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+}
+
+.lists .subLists{
+    width: 25%;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.lists .subLists h1{
+    color: #FA7070;
+}
+
+.lists .subLists ul li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+.lists .subLists ul li:hover{
+    color: #FA7070;
+    list-style: underline;
+}
+
+
+/* ---------------------------- FOOTER ------------------------------------- */
+
+
+footer{
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #FA7070;
+	background-color: #212121;
+    color: #fff;
+}
+
+footer i{
+	padding-left: 15px;
+	font-size: 25px;
+	cursor: pointer;
+}  
+
+footer i:hover{
+    color: #FA7070;
+    transition: 0.5s;
+}
+
+/* #checkbtn{
+    color: white;
+    float: right;
+    line-height: 10vh;
+    margin-right: 30px;
+    font-size: 20px;
+    display: none;
+}
+
+#check{
+    display: none;
+} */
+
+
+
+/* ---------------------------- Media  Queries ------------------------------------- */
+
+@media (max-width: 50rem){
+    #checkbtn{
+        display: block;
+        color: #DD5353;
+        font-size: 1.7rem;
+        margin-top: .6rem;
+       
+    }
+
+    nav{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        border-bottom: .2rem solid #FA7070;
+        background-color: #222;
+        transition: 0.5s ease-out
+    }
+
+    nav ul{
+        display: block;
+        position: fixed;
+        margin-top: 5rem;
+        margin-left: -13rem;
+       background: transparent;
+        /* left: 5rem; */
+       
+    } 
+
+    nav ul li{
+        margin-top: 3rem;
+
+    }
+
+    .help{
+        width: 100%;
+        height: 35vh;
+        position: relative;
+    }
+
+    .help .subHelp{
+        display: block;
+    }
+
+    /* .help .subHelp h1{
+        position: relative;
+    } */
+
+    .help .subHelp h5{
+        position: absolute;
+        left: 9rem;
+        top: 5rem;
+    }
+
+    .help .button{
+        position: absolute;
+        left: 15rem;
+    }
+
+    /* ------------------------------ SECOND PAGE -------------------------------------- */
+
+    #secondPage{
+        width: 100%;
+        height: 150vh;
+        position: relative;
+        border-bottom: 2px solid #FA7070;
+        /* display: block; */
+        
+    }
+
+    #secondPage .profilePic{
+        width: 50%;
+        position: absolute;
+        top: -6rem;
+        left: 7rem;
+
+    }
+
+    #secondPage .aboutMe{
+        width: 90%;
+        position: absolute;
+        top: 10rem;
+    }
+
+    /* #secondPage .aboutMe .aboutMe1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    } */
+    #secondPage .aboutMe h1{
+        position: absolute;
+        left: 12rem;
+        top: 7rem;
+    }
+
+    #secondPage .aboutMe h6{
+        position: absolute;
+        left: 13.3rem;
+        top: 11rem;
+    }
+    #secondPage .aboutMe p{
+        position: absolute;
+        top: 14rem;
+        left: 4rem;
+    }
+    #secondPage .aboutMe button{
+        position: absolute;
+        left: 12rem;
+        top: 36rem;
+    }
+
+    /* ------------------------------ THIRD PAGE -------------------------------------- */
+
+    .thirdPage{
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 320vh;
+    }
+    
+    .thirdPage h1{
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        left: 12rem;
+        top: .6rem;
+        font-size: 2.5rem;
+    }
+
+    .thirdPage .self2{
+        display: block;
+        width: 90%;
+        height: 100vh;
+        padding-top: 2rem;
+    }
+
+    /* .thirdPage .self2 .subSelf{
+        
+    } */
+
+    /* ---------------------------- LISTS ------------------------------------- */
+
+    .lists{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem 0 1rem 10rem;    
+    }
+
+    .lists .subLists{
+        width: 100%;
+
+}
+
+.lists .subLists h1{
+    position: relative;
+    bottom: .1rem;
+    left: -5rem;
+}
+
+.lists .subLists .base{
+    position: relative;
+    left: .1rem;
+}
+
+}
+
+
+
+
+
+
+
+
